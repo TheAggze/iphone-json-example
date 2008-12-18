@@ -13,10 +13,15 @@
 @interface JSONExampleAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
     JSONExampleViewController *viewController;
+	NSMutableData *jsonData;
 }
+
+- (void)getJSONFeed;
+- (NSDictionary *)parseJSON:(NSMutableData *)data;
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet JSONExampleViewController *viewController;
+@property (nonatomic, retain) NSMutableData *jsonData;
 
 @end
 
