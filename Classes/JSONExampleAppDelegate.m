@@ -51,7 +51,6 @@
 	NSLog(@"Fininshed Loading...");
 	NSDictionary * feedDictionary = [self parseJSON:jsonData];
 	NSLog(@"JSON as NSDictionary:: %@", feedDictionary);
-	[feedDictionary release];
 }
 // ----------------------------- //
 
